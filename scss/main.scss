@@ -1,0 +1,87 @@
+$coloruno: #FF3333;
+$colordos: #CCFF00;
+$colortres: #212121;
+$grisclaro: #d8d8d8;
+$fuente: 'Open Sans', sans-serif;
+$regular: 400;
+$bold: 700;
+$extrabold: 800;
+
+@import "servicios";
+@import "portfolio";
+@import "contacto";
+
+
+body { font-family: $fuente;
+}
+
+nav {
+	.navbar-brand {
+		padding: 0px;
+		margin-left: 20px;
+	}
+	ul li a {
+		color: white;
+		font-size: 14px;
+	}
+	.nav-item {
+		margin: 0px 20px 0px 20px;
+	}
+
+	.nav-link:hover {
+		color: $colordos;
+		text-decoration: overline;
+	}
+
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
+}
+
+.bgnav {
+	background-color: $colortres;
+	a.bgnav:hover, a.bgnav:focus,
+	button.bgnav:hover,
+	button.bgnav:focus {
+		background-color: $colortres;
+	}
+}
+
+.footer {
+	background-color: $colordos;
+	padding: 60px 50px 60px 50px;
+
+	.lista__footer {
+		list-style: none;
+		font-weight: $bold;
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+
+	.logosredes {
+		width: 20px;
+		height: 20px;
+		margin: 2px 2px 0px 0px;
+	}
+}
+
+h1 {
+	font-weight: $bold;
+	-webkit-text-stroke: 1px $coloruno;
+	color: transparent;
+	margin: 50px 0px 50px 50px;
+}
+
+.marginLateral {
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+
+a.nounderline:link {
+	text-decoration:none;
+}
+
+.nosotros {
+	height: 250px;
+}

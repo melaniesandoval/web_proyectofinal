@@ -1,0 +1,45 @@
+.contacto {
+	margin: 0px 50px 0px 0px;
+	ul {
+		list-style: none;
+	}
+	li {
+		color: $coloruno;
+	}
+	.nocolor {
+		color: $colortres;
+	}
+}
+
+.formulario {
+	margin-top: 50px;
+	label {
+		font-weight: $bold;
+		letter-spacing: 2px;
+	}
+	input {
+		width: 100%;
+		height: 40px;
+		border-style: none;
+		background-color: $colordos;
+		margin-bottom: 20px;
+	}
+	textarea {
+		margin-top: 10px;
+		width: 100%;
+	}
+	#botonform {
+		display: block;
+		border-style: none;
+		background-color: $coloruno;
+		color: white;
+		width: 200px;
+		height: 50px;
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
+}
+
+#botonform:hover {
+	background-color: $colortres;
+}

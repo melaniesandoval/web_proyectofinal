@@ -1,0 +1,104 @@
+.aboutme {
+	//margin: 50px 25px 50px 50px;
+	margin: 100px 100px 100px 100px;
+	.un {	
+		font-size: 18px;
+		font-weight: $bold;
+		color: $coloruno;
+	}
+	h1 {
+		margin-top: -20px;
+		margin-left: 0px;
+		margin-bottom: 25px;
+	}
+	
+	p {
+		font-size: 12px;
+		font-weight: $regular;
+		text-align: justify;
+		line-height: 1.8;
+	}
+	a {
+		text-decoration: none;
+		color: $coloruno;
+	}
+}
+
+/*
+.aboutme {
+	@media #{$lgdesktops} {
+		width:450px;
+	}
+}
+
+.aboutme {
+	@media #{$desktops} {
+		width:350px;
+	}
+	@media #{$tablets} {
+		width:250px;
+		p {
+			font-size: 11px;
+			line-height: 1.5;
+		}
+	}
+	@media #{$phones} {
+		width:400px;
+	}
+}
+.imgAbout {
+	display: flex;
+	justify-content: flex-end;
+	img {
+		@media #{$lgdesktops} {
+			width:650px;
+		}
+		@media #{$desktops} {
+			width: 500px;
+		}
+		@media #{$tablets} {
+			width: 450px;
+		}
+		@media #{$phones} {
+			width: 500px;
+			margin-top: 25px;
+		}
+	}
+}
+.imgAbout {
+	@media #{$phones} {
+		justify-content: center;
+	}
+}
+*/
+
+.bg-magenta {
+	background-color: $coloruno;
+	.datos {
+		margin: 180px 100px 100px 100px;
+		.tituloDatos {
+			font-size: 18px;
+			font-weight: $bold;
+			color: $colordos;
+		}
+		p {
+			font-size: 13px;
+			text-align: justify;
+			line-height: 1.5;
+			color: white;
+		}
+	}
+}
+
+.cierreFrase {
+		margin-top: 50px;
+		margin-bottom: 25px;
+}
+
+.cierreFrase:hover {
+	opacity: 0;
+}
+
+.imgFrase {
+	margin-bottom: 50px;
+}

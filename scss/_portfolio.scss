@@ -10,7 +10,7 @@
 		top: 0;
 		width: 376px;
 		height: 350px;
-		background-color: $colordos;
+		background-color: $colortres;
 		transition: all 500ms ease-out;
 		opacity: 0px;
 		visibility: hidden;
@@ -40,56 +40,336 @@
 	}
 }
 
+a:active {
+	text-decoration: none;
+	 -moz-box-shadow: 0px 0px 0px transparent;
+      -webkit-box-shadow: 0px 0px 0px transparent;
+      box-shadow: 0px 0px 0px transparent;
+}
+
 .button-img:hover > .capa {
-	opacity: 1;
+	opacity: 0.95;
 	visibility: visible;
 }
 
-/* PÁGINAS TRABAJOS */
+/* SUBPÁGINAS TRABAJOS */
 
+// PÁG HEY YOU . EDITORIAL
 
 .detalleTrabajos {
-		margin-left: 50px;
+	width: 350px;
+	margin: 50px 25px 0px 50px;
 	h2 {
-		margin-top: 50px;
+		
 		font-size: 60px;
 		font-weight: $extrabold;
-		color: $colortres;
+		color: white;
 		border: 0px;
 	}
+	span {
+		color: $colordos;
+	}
 	h3 {
+		color: white;
 		font-size: 18px;
 		letter-spacing: 2px;
 	}
 }
 
-.imagenes {
+.heyUno {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
+	margin: 50px 50px 0px 50px;
+}
+
+.heyDos {
+	display: flex;
+	justify-content: center;
+}
+
+.heyTres {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.bg-hey {
+	background-color: #009999;
 }
 
 .cierre {
-	margin: 50px 0px 50px 0px;
-	
-	h3 {
-		text-align: center;
-		font-size: 24px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 80px;
+	margin-top: 50px;
+	a {
+		text-decoration: none;
+	}
+	.botonV {
+		display: block;
+		border-style: none;
+		background-color: $coloruno;
+		color: white;
+		width: 150px;
+		height: 50px;
+	}
+}
+
+.botonV:hover {
+	background-color: $colortres;
+	color: $colordos;
+}
+
+button .botonV:focus {
+	border-radius: 0px;
+	border-color: transparent;
+}
+
+// PÁG LIBRO . EDITORIAL
+
+.kiosco {
+	width: 350px;
+	margin: 50px 0px 0px 100px;
+	h2 {
+		font-size: 60px;
 		font-weight: $extrabold;
+		color: $colortres;
+		border: 0px;
+	}
+	span {
+		color: #ffb600;
+	}
+	h3 {
+		color: $colortres;
+		font-size: 18px;
+		letter-spacing: 2px;
 	}
 	p {
-		text-align: center;
-		color: $coloruno;
+		margin-top: 50px;
+		font-size: 12px;
+		font-weight: $regular;
+		text-align: justify;
+		line-height: 1.8;
 	}
 }
 
-.cierre a:hover {
-	text-decoration: none;
+.bg-orange {
+	margin-top: 35px;
+	position: relative;
+	background-color: #ffb600;
+	height: 450px;
+	.cajatxt {
+		padding-left: 50px;
+		padding-top: 50px;
+		width: 200px;
+		h3 {
+			font-size: 24px;
+			color: white;
+			margin-bottom: -3px;
+		}
+		.extrab {
+			font-weight: $extrabold;
+		}
+	}
 }
 
-.cierre a p:hover {
-	text-decoration: none;
-	color: $colordos;
-	font-weight: $extrabold;
+.imgLibro {
+	display: flex;
+	justify-content: center;
+	margin: 50px 150px 0px 0px;
+	#libro {
+		@media #{$phones} {
+			width: 400px;
+		}
+	}
+}
 
+
+.bocetos {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center; 
+	padding-top: 50px;
+	padding-right: 50px;
+	
+}
+
+text {
+	font-size: 18px;
+	color: white;
+	letter-spacing: 2px;
+	text-align: right;
+}
+
+.padd- {
+	margin-top: -250px;
+	margin-left: 50px;
+}
+
+// PÁG SÉNECA . PAPELERÍA
+
+.bg-yellow {
+	background-color: #ffcd0d;
+	h2 {
+		color: $colortres;
+	}
+	h3 {
+		color: $colortres;
+	}
+	.subt {
+		font-size: 36px;
+		font-weight: $extrabold;
+		margin-top: 50px;
+		letter-spacing: 0px;
+		color: white;
+	}
+	img {
+		margin-top: 50px;
+	}
+}
+
+// PÁG COCINEROS . STAND
+.bg-stand {
+	background-color: #ebf3fa;
+}
+
+.stand {
+	margin: 50px 25px 0px 50px;
+	h2 {
+		font-size: 60px;
+		font-weight: $extrabold;
+		color: $colortres;
+	}
+	h3 {
+		color: $colortres;
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+}
+
+.stanDos {
+	.subt {
+		font-size: 36px;
+		font-weight: $extrabold;
+		margin: 50px 0px 0px 50px;
+		letter-spacing: 0px;
+		color: $colortres;
+	}
+	p {	
+		margin: 15px 50px 0px 50px;
+		font-size: 12px;
+		font-weight: $regular;
+		text-align: justify;
+		line-height: 1.8;
+	}
+}
+
+.nopad {
+	padding: 0px;
+}
+
+.standContainer {
+	display: flex;
+	justify-content: center;
+	.imgStand {
+		@media #{$phones} {
+			width: 100%;
+		}
+		@media #{$tablets} {
+			width: 100%;
+		}
+		@media #{$desktops} {
+			width: 100%;
+		}
+	}
+}
+
+.cierre-stand {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #83cc8d;
+	a {
+		text-decoration: none;
+	}
+	.botonV {
+		display: block;
+		border-style: none;
+		background-color: $coloruno;
+		color: white;
+		width: 150px;
+		height: 50px;
+		margin-bottom: 80px;
+		margin-top: 50px;
+	}
+}
+
+.footerBlack {
+	background-color: $colortres;
+	padding: 60px 50px 60px 50px;
+
+	.lista__footer {
+		list-style: none;
+		color: white;
+		font-weight: $bold;
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+
+	.logosredes {
+		width: 20px;
+		height: 20px;
+		margin: 2px 2px 0px 0px;
+		color: white;
+	}
+}
+
+// PÁG FREDDO . COMUNICACIÓN
+
+.bg-lightblue {
+	background-color: #9cd5f0;
+	h2 {
+		color: $colortres;
+	}
+	h3 {
+		color: $colortres;
+	}
+}
+
+.imgFreddo {
+	display: flex;
+	justify-content: center;
+	.cartel {
+		margin-top: 50px;
+		@media #{$phones} {
+			width: 100%;
+		}
+		@media #{$tablets} {
+			width: 100%;
+		}
+		@media #{$desktops} {
+			width: 100%;
+		}
+	}
+}
+
+.cierre-freddo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #86cde2;
+	a {
+		text-decoration: none;
+	}
+	.botonV {
+		display: block;
+		border-style: none;
+		background-color: $coloruno;
+		color: white;
+		width: 150px;
+		height: 50px;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
 }
